@@ -1,0 +1,42 @@
+/*
+CAS222
+File Name: grid.css
+Ace in the Hole
+Nikki Elsensohn
+*/
+
+/* This file allows for the multi-column layout of menu items when viewed on larger devices or screens */
+
+
+/* For DESKTOP and TABLET LANDSCAPE Modes */
+
+@media only screen and (min-width: 700px) {
+    
+    .columns {
+        display: block;
+        width: auto;
+    }
+    
+    .columns:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .two-third {
+        float: left;
+        width: 67%;
+        height: 300px;
+        margin: 0;
+        background-color: #ffffff;
+    }
+    
+    .one-third {
+        float: left;
+        width: 33%;
+        height: 300px;
+        margin: 0;
+        background-color: #ff0000;
+    }
+}
+

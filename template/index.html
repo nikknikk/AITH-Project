@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!--
+CAS222
+File Name: index.html
+Ace in the Hole Template
+Nikki Elsensohn
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Ace in the Hole Multisport Weekend Event</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.less">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo" src="images/mobile_logo.png" alt="Ace in the Hole logo" width="35%" height="auto"></a>
+        <nav>
+            <!--Hamburger-->
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+            <!--Search bar-->
+            <!--<input class="search" type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>-->
+
+            <!--Navigation Tabs-->
+            <ul class="menu">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="homehero">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/45d52n122d68/portland/?unit=us" data-label_1="PORTLAND" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-days="5" height="4%">PORTLAND WEATHER</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'weatherwidget-io-js');
+
+            </script>
+
+            <section class="hero-text">
+                <p>Home hero image/slideshow here (background image)</p>
+                <h1>HEADING 1</h1>
+            </section>
+        </section>
+
+        <section class="columns">
+            <div class="two-third">
+                <h2>Heading 2</h2>
+                <p>Text about us/about event<br>
+                    Spicy jalapeno bacon ipsum dolor amet meatball strip steak burgdoggen brisket short ribs pork belly, swine shank pork. Tri-tip venison alcatra, sausage tongue chislic shoulder frankfurter. Capicola salami flank pork chop brisket frankfurter picanha turducken cow turkey short loin. Chislic swine rump tongue ground round chicken bacon.</p>
+                <button class="button">Sign Me Up!</button>
+            </div>
+        <div class="one-third">
+        <aside class="facebook-feed">
+             Facebook Feed Here
+        </aside><br>
+            </div>
+        </section>
+
+        <aside class="map-responsive">
+            Google Map Here
+        </aside>
+
+        <footer>
+
+            <div class="footer-address">
+                <h4>JOIN US!</h4>
+                Ace in the Hole Multisport Event<br>
+                1851 NE Portland Blvd.<br>
+                971-555-2484<br>
+            </div>
+            <hr>
+            <div class="icons">
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a> &nbsp;
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a> &nbsp; <br><br>
+                <p>&copy;2020 Site design by Nikki Elsensohn</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

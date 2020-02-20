@@ -1,0 +1,158 @@
+/*
+CAS222
+File Name: navigation.css
+Ace in the Hole
+Nikki Elsensohn
+*/
+
+/* This file allows for the mobile hidden navigation menu expressed by the "hamburger" icon when viewed on smaller screens */
+
+header ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+header li {
+    padding: 10px 0;
+}
+
+header li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 30px;
+}
+ 
+header li a:hover {
+    background-color: #F4F4F4;
+}
+
+header li a:visited {
+    color: #ff0000;
+}
+
+header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+}
+
+header .menu-icon { 
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ 
+header .menu-icon .navicon { 
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+    margin-top: 10px;
+}
+ 
+header .menu-icon .navicon:before {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+ 
+header .menu-icon .navicon:before {
+    top: 8px;
+}
+ 
+header .menu-icon .navicon:after {
+    top: -8px;
+}
+
+header .menu-btn { 
+    display: none;
+}
+ 
+header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+ 
+header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+ 
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+ 
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+ 
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 600px) {
+    
+    header .menu {
+        float: right;
+        margin: 0 0 10px 0;
+        max-height: none;
+    }
+
+    header ul {
+        overflow: visible;
+        margin-bottom: 0;
+    }
+  
+    header li {
+        float: left;
+    }
+    
+    header li a {
+        padding: 0 15px;
+    }
+  
+    header .menu-icon, .menu-btn {
+        display: none;
+    }
+
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1000px) {
+    
+   
+}
+    
+
+
+
+
+
