@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<!--
+CAS222
+File Name: index.html
+Ace in the Hole Template
+Nikki Elsensohn
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Ace in the Hole Multisport Weekend Event</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <nav class="mobile-nav">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <a href="index.html"><img class="logo" src="images/mobile_logo.png" alt="Ace in the Hole logo"></a>
+            <ul class="menu">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div class="load">
+                <aside class="weatherwidget">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/45d52n122d68/portland/?unit=us"
+                        data-label_1="PORTLAND" data-label_2="WEATHER" data-font="Verdana"
+                        data-icons="Climacons Animated" data-days="5" height="4%" data-shadow="#000000"
+                        data-textcolor="#ffffff">PORTLAND WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+
+                </aside>
+                <div class="principal">
+                    <h1>REGISTER HERE!</h1>
+                    <p>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of
+                        all shapes and sizes, national origins, gender identifications and cultural backgrounds.</p>
+                </div>
+            </div>
+        </div>
+        <section>
+        <h2>Registration Form</h2>
+        <h4>Come join the fun this Multisport Weekend!</h4><br>
+        <div class="row">
+         <ul class="six columns">
+        <h5><span style="color: #ff0000">Included with all entrance fees:</span></h5>
+            <li>Food and Beer</li>
+            <li>Access to live entertainment and Fitness Expo</li>
+            <li>Commemorative Finsiher medal</li>
+            <li>Accurate Chip Timing for competitive races</li>
+            <li>Ace in the Hole Multisport Weekend Tee Shirt</li>
+            <li>After Party entertainment</li>
+        </ul>
+        <div class="five columns">
+            <h5><span style="color: #ff0000">Packet-Pick Up Info:</h5></span>
+            All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. 
+            Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.<br><br>
+        </div>
+        </div>
+        </section>
+        <form class="form" method="post" action="registration_form_processor.php">
+        <span class="error">* required field</span><br><br>
+        Interest: &nbsp;
+        <input type="radio" name="interest" value="athlete">Athlete &nbsp;
+        <input type="radio" name="interest" value="volunteer">Volunteer &nbsp;
+        <input type="radio" name="interest" value="other">Other
+        <span class="error">* </span>
+        <br><br>
+        First Name: <input type="text" name="fname">
+        <span class="error">*</span>
+        <br><br>
+        Last Name: <input type="text" name="lname">
+        <span class="error">* </span>
+        <br><br>
+        Gender ID:
+        <select id="genderid">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+        </select>
+        <span class="error">* </span>
+        <br><br>
+        Age: <input type="text" name="age">
+        <span class="error">* </span>
+        <br><br>
+        E-mail: <input type="text" name="email">
+        <span class="error">* </span>
+        <br><br>
+        Saturday Event: <select id=which_event">
+            <option value="long course">Long Course Triathlon @ 7:00 AM &nbsp; $240</option>
+            <option value="olympic">Olympic Triathlon @ 7:30 AM &nbsp; $110</option>
+            <option value="10K">10K @ 7:15 AM &nbsp; $50</option>
+            <option value="half marathon">Half-Marathon @ 7:15 AM &nbsp; $75</option>
+        </select>
+        <span class="error">* </span>
+        <br><br>
+        Sunday Event: <select id=which_event">
+            <option value="sprint">Sprint Triathlon @ 8:00 AM &nbsp; $90 </option>
+            <option value="try-a-tri">Try-A-Tri @ 8:20 AM &nbsp; $65</option>
+            <option value="splash'n'dash">Splash 'N' Dash @ 12:00 PM</option>
+        </select>
+        <span class="error">* </span>
+        &nbsp; &nbsp;
+        <br><br>
+        Emergency Contact: <input type="text" name="emergency_contact">
+        <span class="error">* </span>
+        <br><br>
+        Emergency Contact Phone Number: <input type="text" name="emergency_contact_phone">
+        <span class="error">* </span>
+        <br><br>
+        Special Accommodations:<br>
+        <textarea name="accommodations" rows="5" cols="40"></textarea>
+        <br><br>
+        <button class="button">Sign Me Up!</button>
+        </form>
+        <aside class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.0402502697807!2d-122.65709668477416!3d45.56962917910235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a6fd91914e09%3A0x8ca1935e2e1e439b!2s1851%20NE%20Portland%20Blvd%20Ct%2C%20Portland%2C%20OR%2097211!5e0!3m2!1sen!2sus!4v1583759783464!5m2!1sen!2sus"
+                width="100%" height="12%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-address">
+            <h4>JOIN US!</h4>
+            Ace in the Hole Multisport Event<br>
+            1851 NE Portland Blvd.<br>
+            Portland, Oregon 97211<br>
+            971-555-2484<br>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a> &nbsp;
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a> &nbsp; <br><br>
+            <p>&copy;2020 Site design by Nikki Elsensohn</p>
+        </div>
+    </footer>
+</body>
+
+</html>
